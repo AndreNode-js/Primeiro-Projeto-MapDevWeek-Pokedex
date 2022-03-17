@@ -1,0 +1,95 @@
+.cartao-pokemon {
+  display: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Essa propriedade coloca uma sombra nos elementos(contenier)*/
+  border-radius: 10px; /*borda arrendodanda do contenier*/
+  
+}
+.cartao-pokemon .cartao-topo {
+    padding: 30px 40px 0px; /*em cima, dos lados e em baixo */ 
+}
+
+.cartao-pokemon .cartao-nome {
+  margin-bottom: 5px; /*margem entre os nomes*/
+
+}
+
+.cartao-pokemon .tipo {
+  font-size: 12px; /*tamanho da letra(fonte)*/
+  background-color: #FFFFFF; /*cor por trás da letra como mini contenier*/
+  opacity: 0.7; /*deixa um pouco mais opaco*/
+  border-radius: 10px; /*bordas arredondadas*/
+  padding: 2px 10px; /*afastamento das bordas*/
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*sombra do contenier*/
+}
+
+.cartao-pokemon .detalhes {
+  color: #FFFFFF;
+  display: flex; /*permite movimentações do itens dentro do contenier*/
+  justify-content: space-between; /*alinha horizontalmente com espaçamento*/
+  align-items: center; /*alinha verticalmente*/ 
+}
+
+.cartao-pokemon .cartao-imagem {
+  width: 350px; /*largura da imagem*/
+  height: 350px; /*altura da imagem*/
+}
+
+.cartao-pokemon img { 
+  max-height: 100%; /*largura máxima de 100%(porcento)*/
+  width: 100%; /*Autura máxima de 100%(porcento)*/
+}
+
+.cartao-pokemon .cartao-informacoes {
+  
+  display: flex; /*permite movimentações do itens dentro do contenier*/
+  justify-content: space-between; /*alinha horizontalmente com espaçamento*/
+  background-color: #FFFFFF; /*cor: o fundo do contenier das informações*/
+  padding: 80px 30px 50px; /*80 em cima, 30 de cada lado e 50 em baixo (espaçamento) */
+  margin-top: -70px; /*dar um efeito de colocar a minha margem por trás da imagem a cima*/
+  border-bottom-left-radius: 8px;/*arredonda borda de baixo lado esquerdo*/
+  border-bottom-right-radius: 8px;/*arredonda borda de baixo lado direito*/
+}
+
+.cartao-pokemon .cartao-informacoes h3 {
+  font-size: 20px; /*tamanho da fonte*/
+  margin-bottom: 15px;/*afastamento dos títulos entre os atributos do pokemon*/
+  border-bottom: 1px solid #6B727A; /*limites do conteiner e as infor. (larguras) cor solida chapada no cinza*/
+
+}
+
+.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades {
+  padding: 0 10px; /*afastamento em cima(0) e em baixo (10) */
+  width: 180px; /*travar a largura*/
+
+}
+
+.cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li {
+  border-bottom: 1px solid #c3c4c5; /*borda de baixo cinza(cria uma linha)*/
+  padding: 0 0 5px; /*afastamento das linhas com as habilidades do pokemon*/
+  margin-bottom: 5px; /*afastamento da margem de baixo*/
+  font-size:  15px; /*tamanho da letra(font)*/
+}
+
+/*abaixo é uma classe sem espaço, ou seja, o nome vai todo junto antes das chaves para criarmos uma classe ABERTA que vai separar os meus cartões como o código do display block e vou usar o NONE para esconder os outros cards*/
+/* OBS: só Pikachu vai ficar aparecendo na tela inicia por causa do display: block */
+.cartao-pokemon.aberto {
+  display: block;   
+}
+.tipo-fogo {
+  background-color: #ED8A8B;
+}
+.tipo-eletrico{
+  background-color: #FCC719 ;
+}
+.tipo-agua {
+  background-color: #76BEFE;
+}
+.tipo-grama {
+  background-color: #49D0B0;
+}
+.tipo-trevas {
+  background-color: #BA68C8;
+}
+.tipo-dragao {
+  background-color: #C29791;
+}

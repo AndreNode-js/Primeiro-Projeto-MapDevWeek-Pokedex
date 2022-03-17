@@ -1,0 +1,36 @@
+.listagem {
+  max-width: 200px; /*largura máxima*/
+}
+.listagem .pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*espaço entre os elementos(cabeça da imagem)*/
+  margin-bottom: 10px;
+  background-color: #6B727A;
+  color: #FFFFFF;
+  padding: 0 5px;
+  cursor: pointer; /*avisar que vai ter um cursor quando passar o mouse por cima*/
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  min-height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Essa propriedade coloca uma sombra nos elementos(contenier)*/
+  transition: 0.15s ease-in-out;/*vai dar um milésimo de segundo e uma animação ou passar o mouse na listagem*/
+}
+/* hover é quando a gente passa o mouse por cima */
+.listagem .pokemon:hover{
+  transform: scale(1.05); /*escala o elemento um pouco ao passar o mouse*/
+  
+}
+
+.listagem .pokemon img {
+  width: 25%; /*largura*/
+  border-radius: 50%; /*porcentagem das bordas */
+}
+
+.listagem .pokemon span{
+  padding-right: 20px; /*desgrudar o texto dando um espaçamento na lista*/
+}
+/* adicionando a classe pokemo um ativo tudo junto */
+.listagem .pokemon.ativo {
+  background-color: #FA6668;
+}

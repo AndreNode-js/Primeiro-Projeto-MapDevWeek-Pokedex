@@ -1,0 +1,12 @@
+/* insteristico -->(* { } ) significa tirar todos os elementos que vem automático para a nossa página do html lançado no site.  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*ex: manter os elemento dentro do ângulo e não ultrapassar margem ou bordas*/
+}
+/*OBS: reset deve ser antes do global primeiro item a ser chamado pelo html*/
+/* depois disso.: link o rest no html para funcionar o comando ex link stylesheet Npasta */
+ul {
+  list-style-type: none; /*tira todos os estilos de marcação como bolinha no inicio da palavra*/
+  
+}

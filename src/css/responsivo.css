@@ -1,0 +1,51 @@
+/* vamos colocar uma propriedade de media max da tela de um celular ou pc por exemplo e quando chegar a esse tamanho a gente aplica as propriedade de style que a gente quer nesse caso aqui ou poderia começar com min-width largura minima de tela*/
+@media (max-width: 750px) {
+  body {
+    font-size: 12px; /*font tamanho 12*/
+  }
+  .pokedex {
+    flex-direction: column; /*deixa tudo em forma de coluna. Bom para usar no CELULAR*/
+    padding: 30px 0; /*margem dos textos*/
+  }
+ .cartao-pokemon {
+   max-width: 300px; /*largura máxima da página*/
+ }
+ 
+ .cartao-pokemon .cartao-imagem {
+  width: 200px; /*largura*/
+  height: 200px;/*autura*/
+}
+.cartao-pokemon .cartao-informacoes {
+  padding: 60px 30px 30px; /*60 em cima, 30 nos lados  e 30 em baixo */
+  margin-top: -50px; /*subir ou descer as letras para trás das imagens*/
+}
+.cartao-pokemon .cartao-informacoes .informacoes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.cartao-pokemon .cartao-informacoes h3{
+  font-size:  16px;
+}
+.listagem {
+  max-width: 300px;
+}
+.listagem ul {
+  display: flex; /*deixa a lista uma ao lado da outra*/
+  gap: 8px; /*da um espaçamento entre a lista*/
+  flex-wrap: wrap; /*quando eu limito 300px por exemplo, e ultrapassar esse valor, a minha lista vai ficar uma abaixo da outra*/
+  justify-content: space-between;
+}
+.listagem .pokemon {
+  width: 140px; /*limeti de tela*/
+  border-top-left-radius: 0; /*retirada do formato arredondado lado esquerdo top*/
+  border-bottom-left-radius: 0;/*retirada do formato arredondado lado esquerdo em baixo*/
+  margin-bottom: 0; /*zero a margem bottom aqui porque, ele esta com gat acima*/
+  border-radius: 8px; /*bordas arredondadas*/
+  
+}
+.listagem .pokemon span {
+  padding-right: 5px;
+
+}
+}

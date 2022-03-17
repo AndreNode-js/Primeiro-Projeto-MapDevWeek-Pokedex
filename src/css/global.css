@@ -1,0 +1,23 @@
+/*body --> é o corpo da página*/
+body {
+  font-family: "Poppins", sans-serif; /*formatação das letras tirada do site fonts.goog...*/
+}
+/* main --> é o contenier da página toda */
+main {
+  /* color: red;    -->troca a cor de todos os textos da página*/
+  /* height: 100px  --> separa uma parte do contenier com px */
+  min-height: 100vh; /*altura mínima ex: o comodo é a visualização de 100% da tela do usuário*/
+ 
+  display: flex; /*existem vários tipos de display mais esse serve p/ organizar; centralizar a nossa área da página e etc...*/
+  align-items: center; /*alinhar os itens ao centro*/
+  justify-content: center; /*align e justify é um combo a ser usado junto com o display*/
+  background-color: #DADFE8; /* cor de fundo da tela*/
+}
+/* criando uma regra de estilização para minha class=pokedex. Abaixo */
+.pokedex {
+  /* background-color: coral; essa é a cor de fundo do pokemon */ 
+  display: flex;
+  gap: 30px; /*gap é uma propriedade de espaçamento entre os contenier*/
+  padding: 30px 0; /*espaçamento interno da borda resultando na separação do elemento contenier*/
+}
+  
